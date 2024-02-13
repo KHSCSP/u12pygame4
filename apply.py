@@ -2,7 +2,7 @@ import pygame, sys
 from pygame.locals import QUIT
 
 pygame.init()
-screen = pygame.display.set_mode((400, 300))
+screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Hello World!')
 
 # grid
