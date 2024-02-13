@@ -5,7 +5,7 @@ def draw_grid(screen, w, h):
     pygame.draw.line(screen, (0,0,0), (0,h//2), (w, h//2))
 
 
-def random_color():
+def mycolor():
     r = random.randint(0,255)
     g = random.randint(0,255)
     b = random.randint(0,255)
@@ -19,21 +19,24 @@ def random_lines(screen, xmin, ymin, xmax, ymax, num):
         y1 = random.randint(ymin, ymax)
         x2 = random.randint(xmin, xmax)
         y2 = random.randint(ymin, ymax)
-        pygame.draw.line(screen, random_color(), (x1, y1), (x2, y2))
+        pygame.draw.line(screen, mycolor(), (x1, y1), (x2, y2))
 
 
 def horiz_lines(screen, x, y, size):
     gap = size // 10
     for i in range(5):
-        pygame.draw.line(screen, random_color(), (x, y+i*gap), (x+size, y+i*gap))
+        pygame.draw.line(screen, mycolor(), (x, y+i*gap), (x+size, y+i*gap))
         
 
 
 def squares_tl(screen, x, y, size):
+    # only 'size' changes
     pass
 
 def squares_bl(screen, x, y, size):
+    # size changes, y changes
     pass
 
 def circles_bl(screen, x, y, size):
+    # size changes, x&y change
     pass
