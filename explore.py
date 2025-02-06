@@ -19,7 +19,7 @@ f.random_lines(screen, 0,0, 400, 300, 100)
 # TODO fill another quadrant
 
 # horizontal lines
-f.horiz_lines(screen, 450, 0, 200)
+f.horiz_lines(screen, 450, 50, 200)
 # TODO fill another quadrant
 
 
