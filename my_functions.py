@@ -23,10 +23,7 @@ def random_lines(screen, xmin, ymin, xmax, ymax, num):
 
 
 def horiz_lines(screen, x, y, size):
-    gap = size // 10
-    for i in range(5):
-        pygame.draw.line(screen, mycolor(), (x, y+i*gap), (x+size, y+i*gap))
-        
+    pass
 
 
 def squares_tl(screen, x, y, size):
